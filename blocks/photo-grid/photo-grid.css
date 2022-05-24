@@ -1,0 +1,58 @@
+.photo-grid {
+    width: 1184px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+    margin: 92px auto 0;
+}
+
+@media screen and (max-width: 1279px) {
+    .photo-grid {
+        width: calc(100% - 2*48px);
+        max-width: 1184px;
+        min-width: 928px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 14px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 16px;
+        margin-top: calc((100vw - 767px)/(1023 - 767)*(92 - 88) + 88px);
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .photo-grid {
+        width: calc(100% - 2*24px);
+        min-width: 720px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .photo-grid {
+        margin-top: calc((100vw - 320px)/(767 - 320)*(88 - 64) + 64px);
+    }
+}
+
+/* для ширины экрана 767px за вычетом 16px*2, чтобы не резким скачком*/
+@media screen and (max-width: 751px) {
+    .photo-grid {
+        width: calc(100% - 2*16px);
+        min-width: 288px;
+    }
+}
+
+/*уменьшаю картинки до минимально допустимых 288рх, потом делаю в 1 столбец*/
+@media screen and (max-width: 624px) {
+    .photo-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        gap: 12px;
+    }
+}

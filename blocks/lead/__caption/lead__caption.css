@@ -1,0 +1,32 @@
+.lead__caption {
+    align-self: flex-start;
+    max-width: 984px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.4;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 8px 0 0;    
+}
+
+/* 976px - max размер блока lead (928px) плюс требуемый отступ *2 (24px)*/
+@media screen and (max-width: 976px) {
+    .lead__caption {
+        margin-left: calc((976px - 100vw)/2);
+    } 
+}
+
+@media screen and (max-width: 927px) {
+    .lead__caption {
+        margin-left: 24px;
+    } 
+}
+
+@media screen and (max-width: 767px) {
+    .lead__caption {
+        margin-left: calc((100vw - 320px)/(767 - 320)*(24 - 16) + 16px);
+    } 
+}

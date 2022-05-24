@@ -1,0 +1,29 @@
+.header {
+    width: calc(100% - 2*48px);
+    max-width: 1184px;
+    min-width: 928px;
+    min-height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0;
+    margin: 0 auto 0;
+    color: #FFFFFF;
+}
+
+/* для ширины экрана 1023px за вычетом 24px*2, чтобы не резким скачком*/
+@media screen and (max-width: 975px) {
+    .header {
+        width: calc(100% - 2*24px);
+        min-width: 720px;
+    }
+}
+
+/* для ширины экрана 767px за вычетом 16px*2, чтобы не резким скачком*/
+@media screen and (max-width: 751px) {
+    .header {
+        width: calc(100% - 2*16px);
+        min-width: 288px;
+        min-height: 42px;
+    }
+}

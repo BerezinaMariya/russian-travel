@@ -1,0 +1,5 @@
+.intro__list {
+    margin: 33px 0 0;
+    display: flex;
+    flex-direction: column;
+}
