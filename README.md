@@ -5,4 +5,4 @@
 * Адаптивная верстка, выполненная при помощи медиазапросов, делающая сайт отзывчивым.  
 * Технологии построения сеток Flex и Grid Layout.  
 
-Ссылка на проект на GitHub Pages: 
+Ссылка на проект на GitHub Pages: https://berezinamariya.github.io/russian-travel/index.html
