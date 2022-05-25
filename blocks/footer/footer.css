@@ -1,25 +1,23 @@
 .footer {
-    width: calc(100% - 48px*2);
     max-width: 1184px;
-    min-width: 928px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto 0;
-    padding: 92px 0 0;
+    margin: 0 auto;
+    padding-top: 92px;
+    padding-left: 48px;
+    padding-right: 48px;
 }
 
-/* для ширины экрана 1023px за вычетом 24px*2, чтобы не резким скачком*/
-@media screen and (max-width: 975px) {
+@media screen and (max-width: 1023px) {
     .footer {
-        width: calc(100% - 24px*2);
-        padding-top: 88px;
-        min-width: 720px;
-    } 
+        padding-left: calc((100vw - 768px)/(1023 - 768)*(48 - 24) + 24px);
+        padding-right: calc((100vw - 768px)/(1023 - 768)*(48 - 24) + 24px);
+        padding-top: calc((100vw - 768px)/(1023 - 768)*(92 - 88) + 88px);
+    }
 }
 
 @media screen and (max-width: 767px) {
     .footer {
-        min-width: 186px;
         margin: 0;
         padding: 64px 0 0 16px;
         flex-direction: column;

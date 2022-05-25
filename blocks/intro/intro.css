@@ -3,7 +3,6 @@
     display:flex;
     flex-direction: column;
     align-items: flex-start;
-    color: #FFFFFF;
     padding-top: 92px;
     padding-left: calc((100vw - 984px)/2);
     /*984 - ширина блока lead, ровняем относительно lead__caption*/

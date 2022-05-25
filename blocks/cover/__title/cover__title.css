@@ -1,15 +1,28 @@
 .cover__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 1.06;
+    text-align: center;
+    color: #FFFFFF;
     width: 100%;
     max-width: 560px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0;
 }
 
 @media screen and (max-width: 767px) {
     .cover__title {
-        width: calc((100vw - 320px)/(767 - 320)*(530 - 288) + 288px);
-        max-width: 530px;
-        min-width: 288px;
+        font-size: calc((100vw - 320px)/(767 - 320)*(72 - 32) + 32px);
+        line-height: calc((100vw - 320px)/(767 - 320)*(76 - 35) + 35px);
+        width: calc((100vw - 320px)/(767 - 320)*(530 - 250) + 250px); /*задала значения 530 и 250, чтобы слова в строках текста не перескакивали*/
+    }
+}
+
+/*чтобы при ширине экрана меньше 320рх текст не уменьшался*/
+@media screen and (max-width: 319px) {
+    .cover__title {
+        font-size: 32px;
+        line-height: 35px;
+        min-width: 250px; /* так как в блоке 288рх текст делится на строки 1. На Байкал "на 2. собаках" */
     }
 }

@@ -1,6 +1,7 @@
 .cover__subtitle {
+    width: 100%;
     max-width: 360px;
-    font-family: 'Inter';
+    min-width: 288px; /*Задала, чтобы при уменьшении экрана меньше 320рх ширина не продолжала уменьшаться*/
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -9,7 +10,6 @@
     color: #FFFFFF;
     z-index: 1;
     margin: 32px 0 0;
-    padding: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -21,9 +21,9 @@
     }
 }
 
+/* чтобы при экране меньше 320рх размер текста не уменьшался*/
 @media screen and (max-width: 319px) {
     .cover__subtitle {
-        width: calc(100% - 2*16px);
         font-size: 14px;
         line-height: 16px;
         margin-top: 16px;
