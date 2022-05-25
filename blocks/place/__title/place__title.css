@@ -1,7 +1,6 @@
 .place__title {
     grid-area: title;
     max-width: 460px;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 900;
     font-size: 72px;

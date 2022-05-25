@@ -1,6 +1,6 @@
 .lead__title {
-    width: 720px;
-    font-family: 'Inter';
+    width: 100%; 
+    max-width: 720px;
     font-style: normal;
     font-weight: 900;
     font-size: 96px;

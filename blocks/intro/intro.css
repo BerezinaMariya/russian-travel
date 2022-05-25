@@ -1,19 +1,17 @@
 .intro {
-    min-height: 429px;
     width: 690px;
     display:flex;
     flex-direction: column;
     align-items: flex-start;
     color: #FFFFFF;
-    padding: 0;
-    margin-top: 92px;
-    margin-left: calc((100vw - 984px)/2);
+    padding-top: 92px;
+    padding-left: calc((100vw - 984px)/2);
     /*984 - ширина блока lead, ровняем относительно lead__caption*/
 }
 
 @media screen and (max-width: 1080px) {
     .intro {
-        margin-left: 48px;
+        padding-left: 48px;
     }
 }
 
@@ -21,14 +19,14 @@
     .intro {
         width: calc(690px + (1023px - 100vw)/(1023 - 767)*(720 - 690));
         max-width: 720px;
-        margin-top: calc((100vw - 767px)/(1023 - 767)*(92 - 88) + 88px);
-        margin-left: calc((100vw - 976px)/(1023 - 976)*(48 - 24) + 24px);
+        padding-top: calc((100vw - 768px)/(1023 - 768)*(92 - 88) + 88px);
+        padding-left: calc((100vw - 976px)/(1023 - 976)*(48 - 24) + 24px);
     }
 }
 
 @media screen and (max-width: 976px) {
     .intro {
-        margin-left: 24px;
+        padding-left: 24px;
     }
 }
 
@@ -36,7 +34,7 @@
     .intro {
         width: calc(288px + (100vw - 320px)/(767 - 320)*(720 - 288));
         max-width: 720px;
-        margin-top: calc((100vw - 320px)/(767 - 320)*(88 - 64) + 64px);
-        margin-left: calc((100vw - 320px)/(767 - 320)*(24 - 16) + 16px);
+        padding-top: calc((100vw - 320px)/(767 - 320)*(88 - 64) + 64px);
+        padding-left: calc((100vw - 320px)/(767 - 320)*(24 - 16) + 16px);
     }
 }

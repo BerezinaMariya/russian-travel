@@ -4,8 +4,8 @@
     flex-direction: column;
     align-items: center;
     list-style-type: none;
-    margin: 12px auto 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 12px 0 92px 0;
 }
 
 @media screen and (max-width: 1279px) {
@@ -19,12 +19,14 @@
     .places {
         width: calc(100% - 2*24px);
         max-width: 928px;
-        margin: 15px auto 0;
+        padding-top: 15px;
+        padding-bottom: 90px;
     }
 }
 
 @media screen and (max-width: 767px) {
     .places {
-        margin: 14px auto 0;
+        padding-top: 14px;
+        padding-bottom: calc((100vw - 320px)/(767 - 320)*(90 - 66) + 66px);
    }
 }

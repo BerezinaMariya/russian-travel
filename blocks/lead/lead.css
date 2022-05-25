@@ -1,20 +1,19 @@
 .lead {
     width: 984px;
     min-width: 320px;
-    margin: 56px auto 0;
-    min-height: 406px;
+    padding-top: 56px;
+    margin: 0 auto;
     display:flex;
     flex-direction: column;
     align-items: center;
     color: #FFFFFF;
-    padding: 0;
 }
 
 @media screen and (max-width: 1279px) {
     .lead {
         width: calc(100% - 2*48px);
-        margin-top: calc((100vw - 1024px)/(1279 - 1024)*(56 - 48) + 48px);
         max-width: 984px;
+        padding-top: calc((100vw - 1024px)/(1279 - 1024)*(56 - 48) + 48px);
     }
 }
 
@@ -22,6 +21,6 @@
     .lead {
         width: 100%;
         max-width: 928px;
-        margin-top: 48px;
+        padding-top: 48px;
     }
 }

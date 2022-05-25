@@ -1,9 +1,4 @@
 .intro__list-item {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.5;
-    color: #FFFFFF;
-    margin: 0;
+    display: flex;
+    flex-direction: row;
 }

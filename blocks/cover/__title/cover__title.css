@@ -1,5 +1,6 @@
 .cover__title {
-    width: 560px;
+    width: 100%;
+    max-width: 560px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,14 +8,8 @@
 
 @media screen and (max-width: 767px) {
     .cover__title {
-        width: calc(100% - 2*16px);
-        max-width: 560px;
-    }
-}
-
-@media screen and (max-width: 319px) {
-    .cover__title {
-        width: calc(100% - 2*16px);
+        width: calc((100vw - 320px)/(767 - 320)*(530 - 288) + 288px);
+        max-width: 530px;
         min-width: 288px;
     }
 }

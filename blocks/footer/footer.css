@@ -4,15 +4,15 @@
     min-width: 928px;
     display: flex;
     justify-content: space-between;
-    margin: 92px auto 0;
-    padding: 0;
+    margin: 0 auto 0;
+    padding: 92px 0 0;
 }
 
 /* для ширины экрана 1023px за вычетом 24px*2, чтобы не резким скачком*/
 @media screen and (max-width: 975px) {
     .footer {
         width: calc(100% - 24px*2);
-        margin: 88px auto 0;
+        padding-top: 88px;
         min-width: 720px;
     } 
 }
@@ -20,7 +20,8 @@
 @media screen and (max-width: 767px) {
     .footer {
         min-width: 186px;
-        margin: 64px 0 0 16px;
+        margin: 0;
+        padding: 64px 0 0 16px;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
