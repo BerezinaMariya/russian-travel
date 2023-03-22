@@ -4,8 +4,9 @@
 ### Технологии
 * HTML
 * CSS
+* GitHub
 ### Функциональность
-* Применены модули раскладки CSS Flexible Box и Grid Layout.
-* При помощи медиазапросов выполнена адаптивная верстка, делающая сайт отзывчивым.  
+* Модули раскладки CSS Flexible Box и Grid Layout.
+* Адаптивная верстка, выполненная при помощи медиазапросов, делающая сайт отзывчивым.  
 
 #### Ссылка на проект на GitHub Pages: https://berezinamariya.github.io/russian-travel/index.html
